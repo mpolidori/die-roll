@@ -37,10 +37,14 @@ hundred_check = True if dice[1] == 100 else False
 total = 0
 print('')
 
-for i in range(int(dice[0])):
-    roll = random.randrange(1, int(dice[1]) + 1)
-    total += roll
+try:
+    for i in range(int(dice[0])):
+        roll = random.randrange(1, int(dice[1]) + 1)
+        total += roll
 
-    print(f' {roll}')
+        print(f' {roll}')
 
-print(f'\n Total: {total}\n')
+    print(f'\n Total: {total}\n')
+
+except KeyboardInterrupt:
+    print('\n What are you doing?! I think you tried to roll too many dice...\n')
