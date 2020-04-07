@@ -47,4 +47,5 @@ try:
     print(f'\n Total: {total}\n')
 
 except KeyboardInterrupt:
-    print('\n What are you doing?! I think you tried to roll too many dice...\n')
+    print(
+        '\n What are you doing?! I think you tried to roll too many dice...\n')
